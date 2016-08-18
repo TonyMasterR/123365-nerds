@@ -4,14 +4,49 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <style>
+    body {
+    	font-family: Arial;
+    	box-sizing: border-box;
+    }
     .container {
+    	width: 920px;
     	padding: 0;
     	margin: 0 auto;
+    	/* text-align: center; */
     }
-    button {
+
+    .feature-item {
+    	width: 250px;
+    	display: inline-block;
+    	margin-right: 80px;
+    }
+    .feature-item:last-child {
+    	margin-right: 0;
+    }
+    .feature-item > img {
+    	margin-bottom: 10px;
+    }
+    .feature-item > p {
+    	margin-bottom: 30px;
+    }
+    .btn {
+    	color: #fff;
     	width: 140px;
     	height: 35px;
-    	border-radius: 6px;
+    	cursor: pointer;
+    	line-height: 35px;
+    	text-align: center;
+    	display: block;
+    	border-radius: 4px;
+    }
+    .btn-red {
+    	background-color: #F95657;
+    }
+    .btn-green {
+    	background-color: #01C877;
+    }
+    .btn-yellow {
+    	background-color: #EFC849;
     }
     </style>
   </head>
@@ -20,25 +55,36 @@
 <div class="features">
 	<div class="container">
 		<div class="feature-item">
-			<img src="http://placehold.it/350x150" alt="img">
+			<a href="#"><img src="http://placehold.it/250x130" alt="img"></a>
 			<h2>Вебсайты</h2>
 			<p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-			<button>Заказать</button>
+			<a type = "submit" class="btn btn-red">Заказать</a>
 		</div>
 		<div class="feature-item">
-			<img src="http://placehold.it/350x150" alt="img">
+			<a href="#"><img src="http://placehold.it/250x130" alt="img"></a>
 			<h2>Приложения</h2>
 			<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-			<button>Заказать</button>
+			<a type = "submit" class="btn btn-green">Заказать</a>
 		</div>
 		<div class="feature-item">
-			<img src="http://placehold.it/350x150" alt="img">
+			<a href="#"><img src="http://placehold.it/250x130" alt="img"></a>
 			<h2>Презентации</h2>
 			<p>Вы даже не подозреваете, насколько вы изумительны</p>
-			<button>Заказать</button>
+			<a type = "submit" class="btn btn-yellow">Заказать</a>
 		</div>
 	</div>
 </div>
+
+
+
+
+
+<div class="maps">
+	<div class="form1"></div>
+</div>
+
+
+
 
   </body>
 </html>
